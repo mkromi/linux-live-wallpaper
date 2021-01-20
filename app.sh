@@ -6,7 +6,6 @@ Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
 
 tags=$(jq -r '.tags' $PWD/linux-live-wallpaper/data.json)
-echo $tags;
 
 IFS=', ' read -r -a array <<< "$tags"
 size=${#array[@]}
