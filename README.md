@@ -9,6 +9,11 @@ Open terminal ( ctrl+alt+t ) and go to __Home__ directory
 ```bash
 cd ~
 ```
+Install __jq__ dependency.
+
+```bash
+sudo apt install jq
+```
 
 Clone the repository
 
@@ -30,7 +35,7 @@ crontab -e
 
 Copy the line below and paste
 ```bash
-*/5 * * * * /bin/sh /home/YOUR_USER_NAME/linux-live-wallpaper/app.sh
+*/5 * * * * /bin/bash /home/YOUR_USER_NAME/linux-live-wallpaper/app.sh
 ```
 Replace YOUR_USER_NAME by your user name.
 
@@ -57,6 +62,9 @@ then run the command below:
 * objects
 
 __Note:__ Tags are the keyword to find specific wallpapers.
+
+### Dependencies:
+* [jq](https://packages.debian.org/search?keywords=jq)
 
 ### Credits:
 * [Image source](https://source.unsplash.com)

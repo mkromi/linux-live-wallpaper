@@ -1,3 +1,5 @@
+#!/bin/bash
+
 printf "Please input few tags [E.g: food,coffee]: "
 read -r tags
 
