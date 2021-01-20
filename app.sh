@@ -1,5 +1,12 @@
 Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
 
-wget https://source.unsplash.com/random/${Xaxis}x${Yaxis} -O /tmp/wallpaper.png --no-check-certificate
+tags=$(jq -r '.tags' $PWD/linux-live-wallpaper/data.json)
+echo $tags;
+
+IFS=', ' read -r -a array <<< "$tags"
+size=${#array[@]}
+index=$(($RANDOM % $size))
+
+wget https://source.unsplash.com/${Xaxis}x${Yaxis}?${array[$index]} -O /tmp/wallpaper.png --no-check-certificate
 gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.png

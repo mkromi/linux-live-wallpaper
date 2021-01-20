@@ -38,6 +38,26 @@ _Note:  To get username type `whoami` in interminal_
 
 The Cron job will run the script every five minutes and change the wallpaper. You can configure the Cron job to change the refresh time.
 
+__If  you want set wallpaper tags__
+```bash
+cd ~
+```
+then run the command below:
+
+```python
+./configure.sh
+```
+
+#### These tags are already configured.
+* food
+* nature
+* people
+* technology
+* buildings
+* objects
+
+__Note:__ Tags are the keyword to find specific wallpapers.
+
 ### Credits:
 * [Image source](https://source.unsplash.com)
 
