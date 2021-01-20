@@ -46,10 +46,11 @@ The Cron job will run the script every five minutes and change the wallpaper. Yo
 __If  you want set wallpaper tags__
 ```bash
 cd ~
+cd linux-live-wallpaper
 ```
 then run the command below:
 
-```python
+```bash
 ./configure.sh
 ```
 
