@@ -14,6 +14,11 @@ Install __jq__ dependency.
 ```bash
 sudo apt install jq
 ```
+Set environment variable __DISPLAY__ to __0__
+
+```bash
+export DISPLAY=:0
+```
 
 Clone the repository
 
