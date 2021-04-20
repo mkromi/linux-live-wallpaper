@@ -32,7 +32,20 @@ Change permission to 777
 ```bash
 sudo chmod -R 777 linux-live-wallpaper
 ```
-Open crontab in edit mode
+
+Go to the directory
+
+```bash
+cd linux-live-wallpaper
+```
+
+Run for the first time
+
+```bash
+./app.sh
+```
+
+To change wallpaper automatically open crontab in edit mode
 
 ```bash
 crontab -e
