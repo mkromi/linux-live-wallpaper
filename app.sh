@@ -13,5 +13,9 @@ IFS=', ' read -r -a array <<< "$tags"
 size=${#array[@]}
 index=$(($RANDOM % $size))
 
-wget https://source.unsplash.com/${splitXaxis[0]}x${splitYaxis[0]}?${array[$index]} -O /tmp/wallpaper.png --no-check-certificate
-gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.png
+wget -q --spider https://source.unsplash.com
+
+if [ $? -eq 0 ]; then
+    wget https://source.unsplash.com/${splitXaxis[0]}x${splitYaxis[0]}?${array[$index]} -O /tmp/wallpaper.png --no-check-certificate
+    gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.png
+fi
