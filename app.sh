@@ -16,6 +16,6 @@ index=$(($RANDOM % $size))
 wget -q --spider https://source.unsplash.com
 
 if [ $? -eq 0 ]; then
-    wget https://source.unsplash.com/${splitXaxis[0]}x${splitYaxis[0]}?${array[$index]} -O /tmp/wallpaper.png --no-check-certificate
-    gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.png
+    wget https://source.unsplash.com/${splitXaxis[0]}x${splitYaxis[0]}?${array[$index]} -O /home/mkromi/Pictures/wallpaper --no-check-certificate
+    gsettings set org.gnome.desktop.background picture-uri file:////home/mkromi/Pictures/wallpaper
 fi
