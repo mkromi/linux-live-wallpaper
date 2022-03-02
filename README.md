@@ -42,7 +42,7 @@ cd linux-live-wallpaper
 Run for the first time
 
 ```bash
-./app.sh
+bash app.sh
 ```
 
 To change wallpaper automatically open crontab in edit mode
@@ -57,7 +57,7 @@ Copy the line below and paste
 ```
 Replace YOUR_USER_NAME by your user name.
 
-_Note:  To get username type `whoami` in interminal_
+_Note:  To get username type `whoami` in terminal_
 
 The Cron job will run the script every five minutes and change the wallpaper. You can configure the Cron job to change the refresh time.
 
@@ -69,7 +69,7 @@ cd linux-live-wallpaper
 then run the command below:
 
 ```bash
-./configure.sh
+bash configure.sh
 ```
 
 #### These tags are already configured.
@@ -89,4 +89,4 @@ __Note:__ Tags are the keyword to find specific wallpapers.
 * [Image source](https://source.unsplash.com)
 
 ### **License**
-The **linux-live-wallpaper** is a open-source application licensed under the [MIT License](LICENSE).
+The **linux-live-wallpaper** is an open-source application licensed under the [MIT License](LICENSE).
