@@ -42,7 +42,7 @@ cd linux-live-wallpaper
 Run for the first time
 
 ```bash
-bash app.sh
+bash /home/YOUR_USER_NAME/linux-live-wallpaper/app.sh
 ```
 
 To change wallpaper automatically open crontab in edit mode
