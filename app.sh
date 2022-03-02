@@ -21,6 +21,6 @@ fi
 wget -q --spider https://source.unsplash.com
 
 if [ $? -eq 0 ]; then
-    wget https://source.unsplash.com/${splitXaxis[0]}x${splitYaxis[0]}?${array[$index]} -O /home/mkromi/Pictures/$file --no-check-certificate
-    gsettings set org.gnome.desktop.background picture-uri file:////home/mkromi/Pictures/$file
+    wget https://source.unsplash.com/${splitXaxis[0]}x${splitYaxis[0]}?${array[$index]} -O $PWD/Pictures/$file --no-check-certificate
+    gsettings set org.gnome.desktop.background picture-uri file:///$PWD/Pictures/$file
 fi
