@@ -33,12 +33,6 @@ Change permission to 777
 sudo chmod -R 777 linux-live-wallpaper
 ```
 
-Go to the directory
-
-```bash
-cd linux-live-wallpaper
-```
-
 Run for the first time
 
 ```bash
