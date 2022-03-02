@@ -44,6 +44,9 @@ Run for the first time
 ```bash
 bash /home/YOUR_USER_NAME/linux-live-wallpaper/app.sh
 ```
+Replace YOUR_USER_NAME by your user name.
+
+_Note:  To get username type `whoami` in terminal_
 
 To change wallpaper automatically open crontab in edit mode
 
@@ -55,9 +58,6 @@ Copy the line below and paste
 ```bash
 */5 * * * * /bin/bash /home/YOUR_USER_NAME/linux-live-wallpaper/app.sh
 ```
-Replace YOUR_USER_NAME by your user name.
-
-_Note:  To get username type `whoami` in terminal_
 
 The Cron job will run the script every five minutes and change the wallpaper. You can configure the Cron job to change the refresh time.
 
